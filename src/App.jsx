@@ -1,17 +1,20 @@
 import "./App.css";
+import GeneralInfo from "./components/GeneralInfo";
+import Education from "./components/Education";
+import ExperienceForm from "./components/Experience";
 
 function App() {
   return (
     <>
       <main>
         <section>
-          <p>General</p>
+          <GeneralInfo />
         </section>
         <section>
-          <p>Education</p>
+          <Education />
         </section>
         <section>
-          <p>Experience</p>
+          <ExperienceForm />
         </section>
         <section>
           <p>Preview</p>

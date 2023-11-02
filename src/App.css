@@ -99,7 +99,7 @@ section {
   background-color: rebeccapurple;
 }
 
-section:first-of-type {
+.general {
   grid-area: general;
 }
 
@@ -113,4 +113,10 @@ section:nth-of-type(n + 3) {
 
 section:last-of-type {
   grid-area: preview;
+}
+
+/* GeneralInfo */
+.generalForm {
+  display: flex;
+  flex-direction: column;
 }
