@@ -1,3 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-sizing: normal;
+}
+
+body {
+  margin: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* color: rgb(30, 50, 50); */
+}
+
+
 h1 {
   font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: caveat;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1.00rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+main {
+  border: 2px dashed rebeccapurple;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-areas: "general preview"
+    "education preview"
+    "experience preview";
+  gap: 0.5rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rebeccapurple;
+}
+
+section:first-of-type {
+  grid-area: general;
+}
+
+section:nth-of-type(n + 2) {
+  grid-area: education;
+}
+
+section:nth-of-type(n + 3) {
+  grid-area: experience;
+}
+
+section:last-of-type {
+  grid-area: preview;
 }

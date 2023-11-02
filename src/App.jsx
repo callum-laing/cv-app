@@ -3,7 +3,20 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>CV Application</h1>
+      <main>
+        <section>
+          <p>General</p>
+        </section>
+        <section>
+          <p>Education</p>
+        </section>
+        <section>
+          <p>Experience</p>
+        </section>
+        <section>
+          <p>Preview</p>
+        </section>
+      </main>
     </>
   );
 }
