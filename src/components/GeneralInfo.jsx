@@ -26,36 +26,41 @@ export default function GeneralInfo() {
       <h2>General Information</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name: </label>
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="phone">Phone Number:</label>
+          <label htmlFor="phone">Phone Number: </label>
           <input
             type="tel"
             id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
+            required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className="form-submit-btn" type="submit">
+          SUBMIT
+        </button>
       </form>
     </div>
   );

@@ -25,58 +25,65 @@ function ExperienceForm() {
 
   return (
     <div>
-      <h2>Experience Form</h2>
+      <h2>Practical Experience</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="companyName">Company Name:</label>
+          <label htmlFor="companyName">Company Name: </label>
           <input
             type="text"
             id="companyName"
             name="companyName"
             value={formData.companyName}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="jobTitle">Job Title:</label>
+          <label htmlFor="jobTitle">Job Title: </label>
           <input
             type="text"
             id="jobTitle"
             name="jobTitle"
             value={formData.jobTitle}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="startDate">Start Date:</label>
+          <label htmlFor="startDate">Start Date: </label>
           <input
             type="date"
             id="startDate"
             name="startDate"
             value={formData.startDate}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="endDate">End Date:</label>
+          <label htmlFor="endDate">End Date: </label>
           <input
             type="date"
             id="endDate"
             name="endDate"
             value={formData.endDate}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="responsibilities">Job Responsibilities:</label>
+          <label htmlFor="responsibilities">Job Responsibilities: </label>
           <textarea
             id="responsibilities"
             name="responsibilities"
             value={formData.responsibilities}
             onChange={handleInputChange}
+            required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className="form-submit-btn" type="submit">
+          SUBMIT
+        </button>
       </form>
     </div>
   );

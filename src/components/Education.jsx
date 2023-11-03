@@ -42,49 +42,55 @@ function EducationForm() {
 
   return (
     <div>
-      <h2>Education Form</h2>
+      <h2>Educational Experience</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="schoolName">School Name:</label>
+          <label htmlFor="schoolName">School Name: </label>
           <input
             type="text"
             id="schoolName"
             name="schoolName"
             value={formData.schoolName}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="studyName">Study Name:</label>
+          <label htmlFor="studyName">Study Name: </label>
           <input
             type="text"
             id="studyName"
             name="studyName"
             value={formData.studyName}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="startDate">Start Date:</label>
+          <label htmlFor="startDate">Start Date: </label>
           <input
             type="date"
             id="startDate"
             name="startDate"
             value={formData.startDate}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
-          <label htmlFor="endDate">End Date:</label>
+          <label htmlFor="endDate">End Date: </label>
           <input
             type="date"
             id="endDate"
             name="endDate"
             value={formData.endDate}
             onChange={handleInputChange}
+            required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className="form-submit-btn" type="submit">
+          SUBMIT
+        </button>
       </form>
     </div>
   );
