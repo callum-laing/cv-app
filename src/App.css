@@ -167,3 +167,7 @@ textarea {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+form {
+  width: 400px;
+}

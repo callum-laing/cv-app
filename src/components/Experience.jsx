@@ -28,7 +28,7 @@ function ExperienceForm() {
       <h2>Practical Experience</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="companyName">Company Name: </label>
+          <label htmlFor="companyName">Company: </label>
           <input
             type="text"
             id="companyName"
@@ -72,7 +72,7 @@ function ExperienceForm() {
           />
         </div>
         <div>
-          <label htmlFor="responsibilities">Job Responsibilities: </label>
+          <label htmlFor="responsibilities">Key Responsibilities: </label>
           <textarea
             id="responsibilities"
             name="responsibilities"

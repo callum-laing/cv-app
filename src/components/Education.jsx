@@ -45,7 +45,7 @@ function EducationForm() {
       <h2>Educational Experience</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="schoolName">School Name: </label>
+          <label htmlFor="schoolName">School: </label>
           <input
             type="text"
             id="schoolName"
@@ -56,7 +56,7 @@ function EducationForm() {
           />
         </div>
         <div>
-          <label htmlFor="studyName">Study Name: </label>
+          <label htmlFor="studyName">Title of Study: </label>
           <input
             type="text"
             id="studyName"
